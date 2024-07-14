@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>dangki</servlet-name>
+        <servlet-class>Controllers.dangki</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dangnhap</servlet-name>
+        <servlet-class>Controllers.dangnhap</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>Controllers.update</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>nopHoSo</servlet-name>
+        <servlet-class>Controllers.nopHoSo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>nophoso</servlet-name>
+        <servlet-class>Controllers.nophoso</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>yeucau</servlet-name>
+        <servlet-class>Controllers.yeucau</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changeAvatar</servlet-name>
+        <servlet-class>Controllers.changeAvatar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dangki</servlet-name>
+        <url-pattern>/dangki</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dangnhap</servlet-name>
+        <url-pattern>/dangnhap</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>nopHoSo</servlet-name>
+        <url-pattern>/nopHoSo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>nophoso</servlet-name>
+        <url-pattern>/nophoso</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>yeucau</servlet-name>
+        <url-pattern>/yeucau</url-pattern>
+    </servlet-mapping>
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+    <servlet-mapping>
+        <servlet-name>changeAvatar</servlet-name>
+        <url-pattern>/changeAvatar</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+  		<description>Luu tru cac file avatar cua khach hang</description>
+  		<param-name>avatar</param-name>
+  		<param-value>
+  			/img/avatar
+  		</param-value>
+  </context-param>
+</web-app>
